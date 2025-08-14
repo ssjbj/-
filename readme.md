@@ -51,11 +51,17 @@ https://termux.dev/en/
 
 从 【F-Droid】（https://f-droid.org/packages/com.termux/） 下载并安装 Termux（推荐使用 F-Droid 版本，更新更稳定）
 
-**步骤 2：启动 Termux 并更新包**
+**步骤 2：启动 Termux 并更新包，安装依赖**
 
 打开 Termux 应用，执行以下命令更新软件包:
 ```
-pkg update && pkg upgrade -y
+pkg update
+pkg upgrade -y
+pkg install python -y
+python -m ensurepip --upgrade
+pkg install python curl file procps -y
+pip install rapidjson 
+pip install rapidjson
 ```
 **步骤 3：授予存储权限**
 
@@ -70,8 +76,40 @@ termux-setup-storage
 
 方法 1：直接下载到 Termux，运行以下命令
 ```
-
+curl -O https://github.com/ssjbj/anime-image-downloader/blob/main/image.sh
 ```
+方法 2：通过手机存储复制
+
+将 <ins>image.sh</sup> 文件下载放到手机内部存储的任意目录（如 Downloads）
+
+在 Termux 中运行以下命令复制到 Termux 目录
+```
+cp /storage/emulated/0/Downloads/image.sh ~/
+```
+方法3：复制image.sh文件内部文本,在Termux内创建image.sh
+```
+nano image.sh
+```
+长按屏幕，选择**Past**粘贴
+
+长按**音量－键**，点击键盘字母**o**后，回车保存
+
+显示：**weite to file : image.sh**,再次回车
+
+长按**音量－键**，点击键盘字母**x**后，回车保存
+
+
+**步骤 5：赋予脚本执行权限**
+```
+chmod +x image.sh
+```
+
+**步骤 6：运行脚本**
+```
+./image.sh
+```
+
+
 
 
 
