@@ -61,7 +61,6 @@ pkg install python -y
 python -m ensurepip --upgrade
 pkg install python curl file procps -y
 pip install rapidjson 
-pip install rapidjson
 ```
 **步骤 3：授予存储权限**
 
