@@ -72,13 +72,13 @@ termux-setup-storage
 
 在弹出的对话框中点击 _允许__
 
-＊＊步骤 4：将脚本文件放入 Termux＊＊
+**步骤 4：将脚本文件放入 Termux**
 
-方法 1：直接下载到 Termux，运行以下命令
+_方法 1：直接下载到 Termux，运行以下命令_
 ```
 curl -O https://github.com/ssjbj/anime-image-downloader/blob/main/image.sh
 ```
-方法 2：通过手机存储复制
+_方法 2：通过手机存储复制_
 
 将 <ins>image.sh</sup> 文件下载放到手机内部存储的任意目录（如 Downloads）
 
@@ -86,7 +86,7 @@ curl -O https://github.com/ssjbj/anime-image-downloader/blob/main/image.sh
 ```
 cp /storage/emulated/0/Downloads/image.sh ~/
 ```
-方法3：复制image.sh文件内部文本,在Termux内创建image.sh
+_方法3：复制image.sh文件内部文本,在Termux内创建image.sh_
 ```
 nano image.sh
 ```
