@@ -44,22 +44,30 @@ json_parser.py：Python 解析器脚本（自动生成）
 **1.下载termux**
 
 谷歌商店
+
 https://github.com/termux/termux-app
+
 https://termux.dev/en/
+
 从 【F-Droid】（https://f-droid.org/packages/com.termux/） 下载并安装 Termux（推荐使用 F-Droid 版本，更新更稳定）
 
 **步骤 2：启动 Termux 并更新包**
+
 打开 Termux 应用，执行以下命令更新软件包:
 ```
 pkg update && pkg upgrade -y
 ```
 **步骤 3：授予存储权限**
+
 脚本需要访问手机存储，需授予 Termux 存储权限(如果已经可以，访问则跳过）：
 ```
 termux-setup-storage
 ```
+
 在弹出的对话框中点击 _允许__
+
 ＊＊步骤 4：将脚本文件放入 Termux＊＊
+
 方法 1：直接下载到 Termux，运行以下命令
 ```
 
