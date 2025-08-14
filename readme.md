@@ -109,6 +109,24 @@ chmod +x image.sh
 ./image.sh
 ```
 
+之后就可以加入自己的api图片并使用它们
+
+
+_**一些问题解疑**_
+
+1.每次运行输入./image.sh过于麻烦,想要简单一些
+
+_直接输入114514进入下载器_ 创建可执行软链接：
+```
+ln -s ~/image.sh $PREFIX/bin/114514
+chmod +x $PREFIX/bin/114514
+```
+验证是否成功：
+```
+114514
+```
+![1754733803498](https://github.com/user-attachments/assets/dca89480-6a28-451f-9174-e1e03a1b136e)
+
 
 
 
